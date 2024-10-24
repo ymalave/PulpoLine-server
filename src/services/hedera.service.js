@@ -22,10 +22,10 @@ class HederaService{
                             .setTransactionValidDuration(60)
                             .execute(client);
 
-        // var createRecept = await createToken.getReceipt(client);
+        var createRecept = await createToken.getReceipt(client);
 
-        // var newTokeId = createRecept.tokenId;
-        return 'jaja'
+        var newTokeId = createRecept.tokenId;
+        return newTokeId;
     }
 }
 
